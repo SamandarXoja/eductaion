@@ -1,0 +1,11 @@
+.card {
+  transform: translateZ(0);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+
+.card:hover {
+  box-shadow:
+    0 0 40px -8px rgb(0 0 0 / 16%),
+    0 0 24px -16px rgb(0 0 0 / 16%);
+  transform: scale3d(1.03, 1.03, 1.08) translate3d(0.1rem, -0.25rem, 20rem);
+}

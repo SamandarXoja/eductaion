@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #27292c;
+  cursor: pointer;
+  padding: 10px 16px;
+  gap: 8px;
+  width: 140px;
+  &.hasBorderBottom {
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  &:hover {
+    .childrenContainer > * {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+
+  .text {
+    flex: 1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .arrowIcon {
+    margin-left: auto !important;
+  }
+
+  .childrenContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & > * {
+      display: none;
+    }
+  }
+}

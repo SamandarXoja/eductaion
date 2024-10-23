@@ -1,0 +1,16 @@
+.row {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+}
+.row:last-child {
+  border: none;
+}
+
+.section-row {
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
